@@ -1,0 +1,74 @@
+@use "mixins";
+
+.subtitulo-recetas {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.contenedor-recetas {
+    padding: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .contenedor-recetas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .titulo-rct {
+        margin: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .contenedor-recetas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+
+
+    }
+
+    .img-receta {
+        scale: 1.3;
+    }
+
+
+}
+
+.ventanas-recetas {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-receta {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.titulo-rct {
+    margin: 20px;
+}
+
+.ver-receta {
+    @include mixins.crear-boton
+}
+
+.ver-receta:hover {
+    @include mixins.hover-boton
+}

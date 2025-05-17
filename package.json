@@ -1,0 +1,20 @@
+{
+  "name": "dw-67590",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-CHS/DW-67590.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor-CHS/DW-67590/issues"
+  },
+  "homepage": "https://github.com/victor-CHS/DW-67590#readme",
+  "description": ""
+}

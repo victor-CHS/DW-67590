@@ -1,0 +1,63 @@
+.contacto {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.formulario {
+    background-color: gray;
+    width: min(40rem, 100%);
+    height: 400px;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 10rem auto;
+    column-gap: 10px;
+    justify-items: start;
+    align-items: center;
+}
+
+.campo:nth-child(3),
+.campo:nth-child(4) {
+    grid-column: 1/3;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        height: 500px;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 15% 15% 15% auto auto;
+    }
+
+    .campo:nth-child(1),
+    .campo:nth-child(2),
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1/3;
+    }
+}
+
+.campo label {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding-bottom: .5rem;
+}
+
+.campo textarea {
+    height: 7rem;
+
+}
+
+.input-text {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+}
+
+.campo {
+    width: 100%;
+}

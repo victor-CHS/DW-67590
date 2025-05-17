@@ -1,0 +1,44 @@
+.section__nosotros {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    width: 100%;
+    min-height: 100dvh;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .section__nosotros {
+        flex-direction: column;
+    }
+}
+
+.articulo__nosotros {
+    flex-direction: column;
+    justify-items: center;
+    padding: 30px;
+
+}
+
+.subtitulo__nosotros {
+    font-size: 30px;
+    margin: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .subtitulo__nosotros {
+        font-size: 20px;
+    }
+}
+
+.articulo__iconos {
+    width: 10rem;
+    height: 10rem;
+}
+
+.parrafo__nosotros {
+    text-align: justify;
+    font-size: 20px;
+}

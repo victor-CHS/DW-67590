@@ -1,0 +1,178 @@
+$color1: #C0782C;
+$color2: #ffffff6f;
+$color3: white;
+$color4: black;
+
+@use "recetas";
+@use "nosotros";
+@use "imagenes";
+@use "contactanos";
+@use "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//header//
+.header {
+    background-image: url(../imagenes/café-fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 450px;
+    }
+}
+
+
+.navegacion {
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navegacion {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.btn-menu {
+    text-decoration: none;
+    color: $color2;
+}
+
+.btn-menu:hover {
+    color: $color3;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $color3;
+}
+
+
+.titulo {
+    padding-top: 2rem;
+    color: $color3;
+    text-align: center;
+    font-size: 25px;
+    margin: 2rem;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+//main//
+article {
+    padding: 2rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+}
+
+@media (max-width: 1024px) {
+    .articulo {
+        flex-direction: row;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .articulo {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .parrafos {
+        padding-bottom: 2rem;
+        text-align: justify;
+    }
+}
+
+.img-art1,
+.img-art2 {
+    width: 320px;
+    height: 300px;
+    border-radius: 20%;
+}
+
+@media (max-width: 1024px) {
+    .texto-art {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-art {
+        text-align: center;
+    }
+}
+
+.boton {
+    @include mixins.crear-boton
+}
+
+.boton:hover {
+    @include mixins.hover-boton
+}
+
+.parrafos {
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+// footer //
+footer {
+    background-color: $color1;
+    height: auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}

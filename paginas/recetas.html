@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Recetas</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,32 +33,33 @@
         <h2 class="subtitulo-recetas">Prueba Nuestras Recetas</h2>
         <section class="contenedor-recetas">
             <div class="ventanas-recetas">
-                <img class="img-receta" src="../imagenes/capuccino.jpg" alt="Capuchino">
+                <img data-aos="flip-left" class="img-receta" src="../imagenes/capuccino.jpg" alt="Capuchino">
                 <h2 class="titulo-rct">Cappuccino</h2>
                 <a class="ver-receta" href="#">Ver receta</a>
             </div>
             <div class="ventanas-recetas">
-                <img class="img-receta" src="../imagenes/cafe-irlandes.jpg" alt="Café Irlandes">
+                <img data-aos="flip-left" class="img-receta" src="../imagenes/cafe-irlandes.jpg" alt="Café Irlandes">
                 <h2 class="titulo-rct">Café Irlandes</h2>
                 <a class="ver-receta" href="#">Ver receta</a>
             </div>
             <div class="ventanas-recetas">
-                <img class="img-receta" src="../imagenes/latte-macchiato.jpg" alt="Latte Macchiato">
+                <img data-aos="flip-left" class="img-receta" src="../imagenes/latte-macchiato.jpg"
+                    alt="Latte Macchiato">
                 <h2 class="titulo-rct">Latte Macchiato</h2>
                 <a class="ver-receta" href="#">Ver receta</a>
             </div>
             <div class="ventanas-recetas">
-                <img class="img-receta" src="../imagenes/frappuccino.jpg" alt="Capuchino">
+                <img data-aos="flip-right" class="img-receta" src="../imagenes/frappuccino.jpg" alt="Capuchino">
                 <h2 class="titulo-rct">Frapuccino</h2>
                 <a class="ver-receta" href="#">Ver receta</a>
             </div>
             <div class="ventanas-recetas">
-                <img class="img-receta" src="../imagenes/cafe-de-olla.jpg" alt="Café Irlandes">
+                <img data-aos="flip-right" class="img-receta" src="../imagenes/cafe-de-olla.jpg" alt="Café Irlandes">
                 <h2 class="titulo-rct">Café de Olla</h2>
                 <a class="ver-receta" href="#">Ver receta</a>
             </div>
             <div class="ventanas-recetas">
-                <img class="img-receta" src="../imagenes/carrajillo.jpg" alt="Latte Macchiato">
+                <img data-aos="flip-right" class="img-receta" src="../imagenes/carrajillo.jpg" alt="Latte Macchiato">
                 <h2 class="titulo-rct">Carajillo</h2>
                 <a class="ver-receta" href="#">Ver receta</a>
             </div>
@@ -72,6 +74,10 @@
         </div>
         <p class="texto-final">Todos Los Derechos Reservados.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
